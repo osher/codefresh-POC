@@ -1,0 +1,7 @@
+{
+  "sources" : "./tmp" ,
+  "detectors" : [
+    "~/max-stars",
+    "~/travis"
+  ]
+} 

@@ -1,0 +1,37 @@
+{
+  "name": "codefresh-repo-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib",
+  "scripts": {
+    "test": "mocha",
+    "prepush": "mocha",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "cover-enforce": "node node_modules/istanbul/lib/cli.js check-coverage --function 90 --lines 85 --branches 75"
+  },
+  "license": "SEE LICENSE IN LISENCE.md",
+  "dependencies": {
+    "async": "^2.1.5",
+    "bagpipes": "^0.1.0",
+    "figlet": "^1.2.0",
+    "hosted-git-info": "^2.4.1",
+    "js-yaml": "^3.8.2",
+    "log4js": "^1.1.1",
+    "request": "^2.81.0",
+    "yargs": "^7.0.2"
+  },
+  "devDependencies": {
+    "husky": "^0.11.3",
+    "istanbul": "*",
+    "mocha": "~2.3.4",
+    "mocha-ui-exports": "^1.0.1",
+    "should": "^11.2.1"
+  },
+  "repository": {
+    "type": "hg",
+    "url": "http://git.mobimate.local/worldmate/codefresh-repo-analyzer"
+  },
+  "publishConfig": {
+    "registry": "http://wm-npm.mobimate.com/"
+  }
+}
